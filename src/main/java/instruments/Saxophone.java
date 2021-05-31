@@ -3,7 +3,7 @@ package instruments;
 import behaviours.IPlay;
 import behaviours.ISell;
 
-public class Saxophone extends Instrument implements ISell,  IPlay {
+public class Saxophone extends Instrument implements IPlay {
 
     private int keys;
 
@@ -22,11 +22,4 @@ public class Saxophone extends Instrument implements ISell,  IPlay {
         return "Boop, boop, boop, booop";
     }
 
-    // ISell method
-    public double calculateMarkUp() {
-        double sell = getSalePrice();
-        double buy =  getCostPrice();
-        double markUp = (sell - buy);
-        return markUp;
-    }
 }

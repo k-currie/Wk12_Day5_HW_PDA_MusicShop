@@ -3,7 +3,7 @@ package instruments;
 import behaviours.IPlay;
 import behaviours.ISell;
 
-public class Keyboard extends Instrument implements ISell, IPlay {
+    public class Keyboard extends Instrument implements IPlay {
 
     private int length;
 
@@ -20,14 +20,6 @@ public class Keyboard extends Instrument implements ISell, IPlay {
     //IPlay method
     public String play() {
         return "DUH DUH DUH DUUUHHHHH";
-    }
-
-    // ISell method
-    public double calculateMarkUp() {
-        double sell = getSalePrice();
-        double buy =  getCostPrice();
-        double markUp = (sell - buy);
-        return markUp;
     }
 
 }

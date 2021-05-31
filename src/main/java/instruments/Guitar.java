@@ -3,7 +3,7 @@ package instruments;
 import behaviours.IPlay;
 import behaviours.ISell;
 
-public class Guitar extends Instrument implements ISell, IPlay {
+    public class Guitar extends Instrument implements IPlay {
 
     private int strings;
     private String colour;
@@ -28,11 +28,4 @@ public class Guitar extends Instrument implements ISell, IPlay {
         return "Twang, twang";
     }
 
-    // ISell method
-    public double calculateMarkUp() {
-        double sell = getSalePrice();
-        double buy =  getCostPrice();
-        double markUp = (sell - buy);
-        return markUp;
-    }
 }

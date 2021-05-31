@@ -39,7 +39,6 @@ public class Shop {
         return "This item is not in stock";
     }
 
-
     public double calculateStockProfit() {
         double profit = 0;
         for(ISell stockItem: stock){
